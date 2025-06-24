@@ -1,0 +1,61 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 10px;
+  border: 3px solid pink;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hearts {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.days {
+  font-size: 32px;
+  font-weight: bold;
+  color: #444;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-img {
+    width: 60px;
+    height: 60px;
+  }
+  .hearts, .days {
+    font-size: 20px;
+  }
+}
